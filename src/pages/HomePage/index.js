@@ -22,6 +22,13 @@ export default function HomePage() {
     setSelectedDestination(event.target.value);
   };
 
+  const handleInfoClick = (event) => {
+    if (!selectedDestination) {
+      event.preventDefault();
+      alert("Selecione uma cidade de destino primeiro.");
+    }
+  };
+
   return (
     <Container>
       <Header>
@@ -50,7 +57,7 @@ export default function HomePage() {
           <p>1. Escolha a cidade de destino que deseja visitar acima.</p>
         </InfoBox>
 
-        <Link to={`/flights/${selectedDestination}`}>
+        <Link to={`/flights/${selectedDestination}`} onClick={handleInfoClick}>
           <InfoBox>
             <p>
               2. Veja as passagens disponíveis, com preços e datas clicando
@@ -59,7 +66,7 @@ export default function HomePage() {
           </InfoBox>
         </Link>
 
-        <Link to={`/hotels/${selectedDestination}`}>
+        <Link to={`/hotels/${selectedDestination}`} onClick={handleInfoClick}>
           <InfoBox>
             <p>
               3. Veja os locais onde você pode se hospedar e todo o conforto que
