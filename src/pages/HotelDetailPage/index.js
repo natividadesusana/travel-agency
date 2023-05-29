@@ -31,9 +31,9 @@ export default function HotelDetailPage() {
     // eslint-disable-next-line
   }, [hotelId]);
 
-  // if (!hotelData) {
-  //   return <div>Loading...</div>;
-  // }
+  if (!hotelData) {
+    return <div>Loading...</div>;
+  }
 
   const {
     name = "",
@@ -66,19 +66,15 @@ export default function HotelDetailPage() {
         <Infos>
           <InfoBox>
             <p>Características:</p>
-            <ul>
-              <li>Local: {city.name}</li>
-              <li>Preço: {`R$ ${price}`}</li>
-              <li>Descrição: {description}</li>
-            </ul>
+            <li>Local: {city.name}</li>
+            <li>Preço: {`R$ ${price}`}</li>
+            <li>Descrição: {description}</li>
           </InfoBox>
           <InfoBox>
             <p>Comodidades:</p>
-            <ul>
-              {conveniences.map((convenience) => (
-                <li key={convenience.id}>{convenience.name}</li>
-              ))}
-            </ul>
+            {conveniences.map((convenience) => (
+              <li key={convenience.id}>{convenience.name}</li>
+            ))}
           </InfoBox>
         </Infos>
       </ContainerHotelDetails>

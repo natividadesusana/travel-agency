@@ -62,15 +62,18 @@ export const ImageBox = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border: 1px solid black;
-
+  border: 2px solid black;
   height: 20vh;
   width: 95vw;
 
   img {
-    width: 15vw;
-    border: 1px solid black;
-    border-radius: 10px;
+    height: 17vh;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  ion-icon {
+    cursor: pointer;
   }
 `;
 
@@ -87,12 +90,12 @@ export const InfoBox = styled.div`
   display: flex;
   flex-direction: column;
   justify-items: left;
-  border: 1px solid black;
+  border: 2px solid black;
   height: 50vh;
   width: 30vw;
   p {
     padding: 20px;
-    font-size: 18px;
+    font-size: 20px;
   }
   li {
     margin-left: 20px;
