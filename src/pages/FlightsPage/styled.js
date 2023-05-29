@@ -8,6 +8,7 @@ export const Container = styled.div`
   height: 100vh;
 
   h1 {
+    padding-left: 50px;
     font-size: 25px;
     margin-top: -500px;
   }
@@ -57,11 +58,19 @@ export const Filters = styled.div`
     padding-bottom: 15px;
     font-size: 17px;
   }
+
+  button {
+    padding: 10px;
+    width: 15vw;
+    padding-left: 15px;
+    cursor: pointer;
+    font-size: 15px;
+  }
 `;
 
 export const ContainerFlights = styled.div`
   margin-left: 330px;
-  margin-top: -280px;
+  margin-top: -330px;
   height: 100%;
   width: 65vw;
   display: flex;
@@ -74,7 +83,7 @@ export const ContainerFlights = styled.div`
 
 export const Box = styled.div`
   height: 35vh;
-  width: 15vw;
+  width: 17vw;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;

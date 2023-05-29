@@ -59,7 +59,7 @@ export default function HomePage() {
           </InfoBox>
         </Link>
 
-        <Link to="/hotels">
+        <Link to={`/hotels/${selectedDestination}`}>
           <InfoBox>
             <p>
               3. Veja os locais onde você pode se hospedar e todo o conforto que
