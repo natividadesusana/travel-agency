@@ -47,17 +47,26 @@ export default function HomePage() {
 
       <Infos>
         <InfoBox>
-          <p>1. Escolha a cidade que deseja visitar.</p>
+          <p>1. Escolha a cidade de destino que deseja visitar acima.</p>
         </InfoBox>
-        <InfoBox>
-          <p>2. Veja as passagens disponíveis, com preços e datas.</p>
-        </InfoBox>
-        <InfoBox>
-          <p>
-            3. Veja os locais onde você pode se hospedar e todo o conforto que
-            eles oferecem!
-          </p>
-        </InfoBox>
+
+        <Link to={`/flights/${selectedDestination}`}>
+          <InfoBox>
+            <p>
+              2. Veja as passagens disponíveis, com preços e datas clicando
+              aqui!
+            </p>
+          </InfoBox>
+        </Link>
+
+        <Link to="/hotels">
+          <InfoBox>
+            <p>
+              3. Veja os locais onde você pode se hospedar e todo o conforto que
+              eles oferecem clicando aqui!
+            </p>
+          </InfoBox>
+        </Link>
       </Infos>
     </Container>
   );

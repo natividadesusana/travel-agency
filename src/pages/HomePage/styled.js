@@ -56,6 +56,10 @@ export const Infos = styled.div`
   justify-content: space-between;
   width: 80%;
   margin-top: 20px;
+  a {
+    text-decoration: none;
+    color: black;
+  }
 `;
 
 export const InfoBox = styled.div`
