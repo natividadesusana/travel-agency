@@ -5,7 +5,7 @@ import { Link, useParams, useNavigate } from "react-router-dom";
 import Slider from "react-input-slider";
 import "rc-slider/assets/index.css";
 
-export default function HotelsPage() {
+export default function HotelListPage() {
   const [cities, setCities] = useState([]);
   const [minPrice, setMinPrice] = useState(0);
   const [maxPrice, setMaxPrice] = useState(1000);
@@ -28,8 +28,8 @@ export default function HotelsPage() {
 
   const selectedCity = cities.find((city) => city.id === parseInt(cityId));
 
-  const handleFlightClick = (flightId) => {
-    navigate(`/hotels/${flightId}/details`);
+  const handleHotelClick = (hotelId) => {
+    navigate(`/hotels/${hotelId}/details`);
   };
 
   const handleSearch = () => {
@@ -96,7 +96,7 @@ export default function HotelsPage() {
 
         <ContainerHotels>
           {filteredHotels.map((hotel) => (
-            <Box key={hotel.id} onClick={() => handleFlightClick(hotel.id)}>
+            <Box key={hotel.id} onClick={() => handleHotelClick(hotel.id)}>
               <img src={hotel.avatar} alt="Avatar" />
               <p>Nome do Hotel: {hotel.name}</p>
               <p>Preço: R$ {hotel.price}</p>
