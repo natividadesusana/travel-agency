@@ -1,71 +1,57 @@
-# Getting Started with Create React App
+# Travel Agency
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<img width="1437" alt="Captura de Tela 2023-06-12 às 19 15 55" src="https://github.com/natividadesusana/travel-agency/assets/95102911/9f76cf18-812d-4aac-862f-b22c34d21311">
 
-## Available Scripts
+Demo: https://projeto18-freela-front-rust.vercel.app/
 
-In the project directory, you can run:
+## ℹ️ About
 
-### `npm start`
+Travel Agency is a small travel agency that aims to make life easier for our customers, providing information about tickets and accommodation for the best destinations.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The goal was to practice creating a website that provides a digital experience for users. The site does not sell tickets and accommodation, it only lists the available options so that customers can assemble their ideal trip. It is not necessary to have an account to access the information. When selecting a city, separate ticket and accommodation options will be displayed in different areas of the site.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ Technologies
+<div> 
+ <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="40" width="52" alt="react logo"  />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" width="52" alt="js logo"  />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" width="52" alt="html5 logo"  />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" width="52" alt="css3 logo"  />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" height="40" width="52" alt="figma logo"   />        
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="40" width="52" alt="git logo"  />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" height="40" width="52" alt="github logo" /> 
+<div>
+<br>
+I chose to use React.js as one of the most popular web development libraries today, providing a scalable and maintainable framework for building modern web applications. I used React Router to manage the application's routes. Axios was used to make API calls and search for information about tickets, accommodations and cities. I used Styled-Components to create the user interface and provide a nice and intuitive experience for users.
 
-### `npm test`
+## ⚙️ Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Search by City (/):
+On the homepage, users can perform a search by city. On this screen, we provide information about the site and the steps to use it. We also feature an attractive background image to create a holiday atmosphere.
 
-### `npm run build`
+- List of Tickets (/flights/:destination):
+On this screen, available tickets for the selected city are displayed, with the option to filter by price.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Ticket Details (/flights/:destination/:flightId):
+When clicking on a ticket from the list, users are redirected to this detail screen, where they can view all information related to the ticket, such as airline, city of origin, city of destination, departure time, arrival time and ticket price. ticket.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- List of Accommodations (/hotels/:destination):
+On this screen, users can see a list of available accommodations for the selected city, with the option to filter by price.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Accommodation Details (/hotels/:destination/:hotelId):
+When selecting an accommodation from the list, users are redirected to this details screen, where they can view images of the hotel, features and amenities available, name, description and daily rate.
 
-### `npm run eject`
+## 🚀 Next steps
+- Implement a login system for users to save their information and history
+- Add the functionality to rate and comment on tickets and accommodations
+- Implement an administrative panel to manage tickets, accommodations and cities
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🖇️ How to Run
+To run this project locally, follow these steps:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Clone this repository: https://github.com/natividadesusana/travel-agency.git
+2. Install dependencies: npm install
+3. Run the development server: npm start
+4. Go to http://localhost:3000 in your browser to see the application running.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# projeto18-freela-front
+## How to Contribute
+Contributions are always welcome! If you find any bugs or have suggestions for new features, feel free to open an issue or pull request.
